@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amel Osman | Cybersecurity & Lifestyle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="blog-header">
+    <h1>Welcome, I'm Amel Osman</h1>
+    <p>Cybersecurity enthusiast | Army Veteran | Tech meets Lifestyle 💻🌿</p>
+  </header>
+
+  <section class="blog-container">
+    <div class="blog-card">
+      <h2>About Me</h2>
+      <p>I’m a cybersecurity student, Army vet, and tech lifestyle blogger. I share real stories from the trenches—whether it’s a late-night SOC lab or early morning yoga class. This site showcases my projects, thoughts, and career journey.</p>
+      <a href="about.html">Learn More</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>My Projects</h2>
+      <p>Explore hands-on labs, network configurations, forensic investigations, and SOC dashboards I've worked on. Each project tells a story of growth and skill development.</p>
+      <a href="projects.html">View Projects</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>Read the Blog</h2>
+      <p>Tech, wellness, military life, and balance — I write about it all. Discover how I balance running Kali Linux labs while also raising Kali (my puppy).</p>
+      <a href="blog.html">Visit Blog</a>
+    </div>
+  </section>
+
+  <section class="blog-container">
+    <div class="blog-card">
+      <h2>Featured Lab: NAT + EIGRP</h2>
+      <p>This lab involved configuring static and dynamic NAT along with EIGRP routing across two campuses using Cisco Packet Tracer.</p>
+      <a href="projects.html#nat-lab">View Lab</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>Currently Working On</h2>
+      <p>Certifications: ISC2 CC, CEH, and Network+ • Building my cyber wallet • Creating my SOC portfolio • Studying for final exams.</p>
+      <a href="blog.html">Follow My Progress</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amel Osman | Built with ❤️, served with grit. 🛡️🌱
+  </footer>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

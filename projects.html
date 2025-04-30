@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Amel Osman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="blog-header">
+    <h1>My Cybersecurity Projects</h1>
+    <p>Hands-on labs, tools, frameworks, and documentation I've built along my cyber journey.</p>
+  </header>
+
+  <section class="blog-container">
+    <div class="blog-card">
+      <h2>🔒 SOC Analyst Lab Collection</h2>
+      <p>Lab simulations using SIEM tools, incident response walkthroughs, alert triage reports, and threat detection exercises.</p>
+      <a href="https://www.osmanamelcyber.com/soc-labs" target="_blank">View Labs</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>🌐 ElectroMyCycle Network Design</h2>
+      <p>Built a two-campus enterprise network using Cisco Packet Tracer with EIGRP, NAT, VLANs, DNS, DHCP, and email/web servers.</p>
+      <a href="https://www.osmanamelcyber.com/electromycycle" target="_blank">Project Walkthrough</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>📄 NIST CSF 2.0 + CMMC Framework</h2>
+      <p>Created policies and an implementation roadmap to meet CMMC Level 1 using the updated NIST CSF 2.0 model. Delivered team documentation and a Gantt chart.</p>
+      <a href="https://www.osmanamelcyber.com/framework" target="_blank">See Documents</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>🐧 Linux Web Server Setup</h2>
+      <p>Built a secure Linux server using AlmaLinux with user accounts, file sharing via Samba, and Apache hosting. Integrated client access from Windows.</p>
+      <a href="https://www.osmanamelcyber.com/linux-webserver" target="_blank">View Project</a>
+    </div>
+
+    <div class="blog-card">
+      <h2>🧠 TryHackMe Highlights</h2>
+      <p>Tracked learning across rooms like Cyber Security 101, SOC Level 1, and Threat Intelligence. Documented key concepts and flags captured.</p>
+      <a href="https://www.osmanamelcyber.com/tryhackme" target="_blank">Explore Progress</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amel Osman | Built with passion and packets. 🛡️💻
+  </footer>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

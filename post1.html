@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Amel Osman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --text: #1e2b1e;
+      --background: #f4f7f4;
+      --card-bg: #e4ede4;
+      --accent: #264d26;
+      --accent-hover: #3a6b3a;
+      --border: rgba(38, 77, 38, 0.15);
+    }
+
+    [data-theme="dark"] {
+      --text: #f1f1f1;
+      --background: #1e2a1e;
+      --card-bg: #2a3c2a;
+      --accent: #7dd87d;
+      --accent-hover: #5fd75f;
+      --border: rgba(125, 216, 125, 0.15);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background-color: var(--background);
+      color: var(--text);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav {
+      background-color: var(--card-bg);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: var(--card-bg);
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      color: var(--accent);
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .blog-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .blog-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px var(--accent-hover);
+    }
+
+    .blog-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    .blog-card .date {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .blog-card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .blog-card a:hover {
+      color: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.85rem;
+      color: #777;
+      background-color: var(--card-bg);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .blog-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Cybersecurity & Lifestyle Blog</h1>
+    <p>Sharing my journey in tech, personal growth, and everything in between.</p>
+  </header>
+
+  <!-- Blog Post Cards -->
+  <section class="blog-container">
+
+    <!-- Example Post 1 -->
+    <div class="blog-card">
+      <h2>How I Started My Cybersecurity Journey</h2>
+      <p class="date">April 8, 2025</p>
+      <p>I started with military logistics and now I’m diving deep into cybersecurity. Here’s how I transitioned and what tools helped me grow...</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <!-- Example Post 2 -->
+    <div class="blog-card">
+      <h2>Balancing Fitness, Study & Cyber Life</h2>
+      <p class="date">March 28, 2025</p>
+      <p>From sunrise yoga to midnight labs — here’s my weekly rhythm and how I stay motivated in tech and wellness.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <!-- Example Post 3 -->
+    <div class="blog-card">
+      <h2>TryHackMe: My Favorite Learning Rooms</h2>
+      <p class="date">March 14, 2025</p>
+      <p>If you’re new to hands-on cybersecurity, TryHackMe is a great place to start. These are my top 3 rooms and what I learned in each...</p>
+      <a href="#">Read More</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Amel Osman | Blogging through bits and balance. 🧠🌱
+  </footer>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+
+</body>
+</html>

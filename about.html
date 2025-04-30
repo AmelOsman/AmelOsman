@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Amel Osman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="blog-header">
+    <h1>Cybersecurity & Lifestyle Blog</h1>
+    <p>Sharing my journey in tech, personal growth, and everything in between.</p>
+  </header>
+
+  <div class="blog-filters">
+    <button onclick="filterPosts('all')">All</button>
+    <button onclick="filterPosts('cyber')">Cybersecurity</button>
+    <button onclick="filterPosts('lifestyle')">Lifestyle</button>
+    <button onclick="filterPosts('labs')">Labs</button>
+  </div>
+
+  <section class="blog-container">
+    <div class="blog-card cyber">
+      <h2>How I Started My Cybersecurity Journey</h2>
+      <p class="date">April 8, 2025</p>
+      <p>I started with military logistics and now I’m diving deep into cybersecurity. Here’s how I transitioned and what tools helped me grow...</p>
+      <a href="post1.html">Read More</a>
+    </div>
+
+    <div class="blog-card lifestyle">
+      <h2>Balancing Fitness, Study & Cyber Life</h2>
+      <p class="date">March 28, 2025</p>
+      <p>From sunrise yoga to midnight labs — here’s my weekly rhythm and how I stay motivated in tech and wellness.</p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-card labs">
+      <h2>TryHackMe: My Favorite Learning Rooms</h2>
+      <p class="date">March 14, 2025</p>
+      <p>If you’re new to hands-on cybersecurity, TryHackMe is a great place to start. These are my top 3 rooms and what I learned in each...</p>
+      <a href="#">Read More</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amel Osman | Blogging through bits and balance. 🧠🌱
+  </footer>
+
+  <script>
+    // Theme initialization
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    // Filter posts by category
+    function filterPosts(category) {
+      const posts = document.querySelectorAll('.blog-card');
+      posts.forEach(post => {
+        if (category === 'all') {
+          post.classList.remove('hidden');
+        } else {
+          post.classList.toggle('hidden', !post.classList.contains(category));
+        }
+      });
+    }
+  </script>
+</body>
+</html>

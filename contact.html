@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Amel Osman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Résumé</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <header class="blog-header">
+    <h1>Let’s Connect</h1>
+    <p>I’d love to hear from you — whether it’s about cybersecurity, collaboration, or career opportunities!</p>
+  </header>
+
+  <section class="blog-container">
+  
+
+    <div class="blog-card" style="text-align:center">
+      <h2>🔗 Connect with Me</h2>
+      <div style="font-size: 2rem; display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem;">
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-github" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.osmanamelcyber.com" target="_blank" aria-label="Portfolio">
+          <i class="fas fa-globe"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <h2>💬 Quick Message (Form Optional)</h2>
+      <form action="mailto:osmanamel@outlook.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name" required style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" required style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br/>
+
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.5rem;"></textarea><br/><br/>
+
+        <button type="submit" style="padding: 0.75rem 1.5rem; background-color: var(--primary); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amel Osman | Let’s build and secure the future. 🛡️📬
+  </footer>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>
